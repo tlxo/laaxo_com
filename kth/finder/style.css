@@ -1,0 +1,17 @@
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	background-color: ccc;
+}
+
+#searchbox {
+	width: 245px;
+	font-size: 14px;
+}
+
+p {
+	width: 300px;
+	font-size: 14px;
+}
+
+#map {
+}
