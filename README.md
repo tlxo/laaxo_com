@@ -1,2 +1,2 @@
 # laaxo.com
-Source for laaxo.com -->
+My home on the web.
