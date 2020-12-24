@@ -22,7 +22,8 @@
         font-weight: 400;
       }
       div {
-        width: 320px;
+        width: 400px;
+        max-width: 100%;
         margin: 0 auto;
       }
       h1 {
@@ -33,10 +34,11 @@
       }
       p {
         margin-top: 5px;
-        max-width: 305px;
+        max-width: 100%;
       }
       img {
-        max-width: 300px;
+        width: 400px;
+        max-width: 100%;
         margin: 10px 0;
       }
       ul {
@@ -59,6 +61,42 @@
       a:hover, a:active {
         text-decoration: underline;
         color: blue;
+      }
+      footer {
+        padding: 10px;
+        margin: 0 auto;
+        width: 400px;
+        max-width: 100%;
+      }
+      footer p {
+        font-size: .9em;
+        font-weight: 700;
+        float: right;
+        margin-right: 20px;
+      }
+
+      @media only screen and (min-width: 375px)  {
+        h1 {
+          font-size: 4em;
+        }
+        p {
+          font-size: 1.2em;
+        }
+        ul, footer p {
+          font-size: 1.05em;
+        }
+      }
+
+      @media only screen and (min-width: 413px)  {
+        h1 {
+          font-size: 4.4em;
+        }
+        p {
+          font-size: 1.3em;
+        }
+        ul, footer p {
+          font-size: 1.2em;
+        }
       }
 
     </style>
@@ -97,25 +135,28 @@
 
     <div>
       <h1>Toni Laakso</h1>
-      <ul>
 
-        <li>
-          <script>
-            document.write('<a href="mai');
-            document.write('lto');
-            document.write(':&#116;&#111;&#110;&#105;');
-            document.write('&#64;');
-            document.write('&#108;&#97;&#97;&#120;&#111;&#46;&#99;&#111;&#109;">');
-            document.write('Email<\/a>');
-          </script>
-        </li>
 
-        <li><a href="https://github.com/tlxo">GitHub</a></li>
-        <li><a href="https://instagram.com/tlxo">Instagram</a></li>
-        <li><a href="https://linkedin.com/in/tonilaakso">LinkedIn</a></li>
-        <li><a href="https://twitter.com/tlxo">Twitter</a></li>
+      <nav>
+        <ul>
+          <li>
+            <script>
+              document.write('<a href="mai');
+              document.write('lto');
+              document.write(':&#116;&#111;&#110;&#105;');
+              document.write('&#64;');
+              document.write('&#108;&#97;&#97;&#120;&#111;&#46;&#99;&#111;&#109;">');
+              document.write('Email<\/a>');
+            </script>
+          </li>
 
-      </ul>
+          <li><a href="https://github.com/tlxo">GitHub</a></li>
+          <li><a href="https://instagram.com/tlxo">Instagram</a></li>
+          <li><a href="https://linkedin.com/in/tonilaakso">LinkedIn</a></li>
+          <li><a href="https://twitter.com/tlxo">Twitter</a></li>
+        </ul>
+      </nav>
+
     </div>
 
     <div>
@@ -129,16 +170,15 @@
       <p>Uncompromising user experiences and engaging storytelling are my passion.</p>
     </div>
 
-    <div>
-      <p>--</p>
+    <footer>
       <p>(&#8580;)
         <script>
           var d = new Date()
           document.write(d.getFullYear())
         </script>
-        | All wrongs reversed
+        &bull; All wrongs reversed
       </p>
-    </div>
+    </footer>
 
   </body>
 </html>
