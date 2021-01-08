@@ -1,0 +1,4 @@
+# Redirect laaxo.com to tlxo.fi for now
+
+https://laaxo.com/* https://tlxo.fi/ 301!
+https://www.laaxo.com/* https://tlxo.fi/ 301!
